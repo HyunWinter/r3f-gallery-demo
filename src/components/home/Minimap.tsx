@@ -23,7 +23,7 @@ function Loader() {
         width: '120px',
         height: '18px',
       }}>
-      {progress ? progress.toFixed(0) : '0'}% 로딩 중...
+      {progress ? progress.toFixed(0) : '0'}% loading...
     </Html>
   )
 }
