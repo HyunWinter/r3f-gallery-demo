@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import 'fonts.css'; */
+
+@layer base {
+  html,
+  body,
+  #__next {
+    @apply relative;
+  }
+
+  /* Fonts */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-SBAggro text-pretty;
+  }
+
+  h5,
+  p {
+    @apply font-NotoSans text-pretty;
+  }
+
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@layer components {
+  /* Lenis */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    /* pointer-events: none; */
+  }
+
+  /* Width and padding below navigation are handled in the section and hero containers */
+  .page-container {
+    @apply min-h-svh w-full flex flex-col;
+  }
+
+  .section-container {
+    @apply max-w-section w-full mx-auto desktop:px-[5rem] px-6 tablet:pb-section pb-sectionMobile;
+  }
+
+  .background-container {
+    @apply w-full tablet:pb-section pb-sectionMobile;
+  }
+
+  .header-container {
+    @apply max-w-section absolute top-0 left-0 right-0 h-header w-full mx-auto desktop:px-[5rem] px-6 gap-x-8 py-[2.5rem] flex desktop:justify-between justify-center items-center z-nav text-ioz-primary;
+  }
+
+  /* UI */
+  .no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,39 @@
+.curveSvg,
+.curveBackground {
+  fill: #f2f2f2;
+  position: fixed;
+  height: calc(100svh + 600px);
+  width: 100vw;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.curveBackground {
+  background-color: #f2f2f2;
+  transition: opacity 0s linear 0.1s;
+}
+
+.curveRoute {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  color: black;
+  font-size: 46px;
+  z-index: 999;
+  transform: translateX(-50%);
+  text-align: center;
+
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}

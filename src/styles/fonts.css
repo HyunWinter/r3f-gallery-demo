@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'SBAggro';
+  src: url('/fonts/SBAggro-700.ttf') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SBAggro';
+  src: url('/fonts/SBAggro-500.ttf') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SBAggro';
+  src: url('/fonts/SBAggro-300.ttf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PyeongChangPeace';
+  src: url('/fonts/PyeongChangPeace-Bold.ttf') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PyeongChangPeace';
+  src: url('/fonts/PyeongChangPeace-Light.ttf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('/fonts/NotoSansKR.ttf') format('woff');
+  font-style: normal;
+}
